@@ -1,0 +1,17 @@
+// __multiversion__
+
+#include "fragmentVersionCentroidUV.h"
+#include "uniformMacro.h"
+
+LAYOUT_BINDING(0) uniform sampler2D TEXTURE_0;
+
+void main() {
+  if (texture2D(TEXTURE_0, uv).a > 0.0)
+    discard;
+
+  float a = 1.f;
+  ##TOOLBOX_OUTLINE_CODE##
+  if (a == 1.f)
+    discard;
+  gl_FragColor = vec4(1.f, 0.f, 0.f, 1.f);
+}

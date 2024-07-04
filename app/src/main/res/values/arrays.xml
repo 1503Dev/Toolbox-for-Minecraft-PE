@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="user_icons">
+        <item>@drawable/ic_message_black_24dp</item>
+        <item>@drawable/ic_forum_outline_black_24dp</item>
+        <item>@drawable/ic_account_multiple_black_24dp</item>
+        <item>@drawable/ic_alert_rhombus_black_24dp</item>
+        <item>@drawable/ic_apple_safari_black_24dp</item>
+        <item>@drawable/ic_apps_box_black_24dp</item>
+        <item>@drawable/ic_bell_ring_outline_black_24dp</item>
+        <item>@drawable/ic_bookmark_outline_black_24dp</item>
+        <item>@drawable/ic_cart_outline_black_24dp</item>
+        <item>@drawable/ic_chat_alert_outline_black_24dp</item>
+        <item>@drawable/ic_chat_processing_outline_black_24dp</item>
+        <item>@drawable/ic_circle_double_black_24dp</item>
+        <item>@drawable/ic_comment_account_outline_black_24dp</item>
+        <item>@drawable/ic_dice_3_outline_black_24dp</item>
+        <item>@drawable/ic_ethereum_black_24dp</item>
+        <item>@drawable/ic_fan_black_24dp</item>
+        <item>@drawable/ic_flash_black_24dp</item>
+        <item>@drawable/ic_ghost_black_24dp</item>
+        <item>@drawable/ic_guy_fawkes_mask_black_24dp</item>
+        <item>@drawable/ic_home_black_24dp</item>
+        <item>@drawable/ic_key_variant_black_24dp</item>
+        <item>@drawable/ic_lan_black_24dp</item>
+        <item>@drawable/ic_poll_black_24dp</item>
+        <item>@drawable/ic_speedometer_black_24dp</item>
+        <item>@drawable/ic_spider_black_24dp</item>
+        <item>@drawable/ic_thumb_down_outline_black_24dp</item>
+        <item>@drawable/ic_thumb_up_outline_black_24dp</item>
+        <item>@drawable/ic_delete_black_24dp</item>
+    </array>
+</resources>

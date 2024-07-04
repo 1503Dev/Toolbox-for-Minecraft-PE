@@ -1,0 +1,168 @@
+{
+  "name": "category_render",
+  "help_id": "render",
+  "android_icon": "ic_camera_outline_black_24dp",
+  "shortcut_color": "shortcut_indigo",
+
+  "items": [
+    {
+      "type": "toggle",
+      "path": "xray/enabled",
+      "label": "s_render_xray",
+      "icon": "ic_cube_scan_black_24dp",
+      "items": [
+        {
+          "type": "block_list",
+          "path": "xray/show_blocks",
+          "block_textures": ["diamond_ore", "gold_ore", "iron_ore", "coal_ore", "lapis_ore", "redstone_ore", "emerald_ore", "quartz_ore", "vanilla_1.16:nether_gold_ore", "vanilla_1.17.0:copper_ore", ["vanilla_1.16:ancient_debris_side", "vanilla_1.16:ancient_debris_side", "vanilla_1.16:ancient_debris_top"], "vanilla_1.16:gilded_blackstone", "diamond_block", "gold_block", "iron_block", "lapis_block", "redstone_block", "emerald_block", "lava_flow", "obsidian", "vanilla_1.16:netherite_block", "vanilla_1.17.0:copper_block", "vanilla_1.17.0:amethyst_block"],
+          "block_values": [["diamond_ore", "deepslate_diamond_ore"], ["gold_ore", "deepslate_gold_ore"], ["iron_ore", "deepslate_iron_ore"], ["coal_ore", "deepslate_coal_ore"], ["lapis_ore", "deepslate_lapis_ore"], ["redstone_ore", "deepslate_redstone_ore"], ["emerald_ore", "deepslate_emerald_ore"], "quartz_ore", "nether_gold_ore", ["copper_ore", "deepslate_copper_ore"], "ancient_debris", "gilded_blackstone", "diamond_block", "gold_block", "iron_block", "lapis_block", "redstone_block", "emerald_block", "lava", "obsidian", "netherite_block", "copper_block", "amethyst_block"]
+        }
+      ]
+    },
+
+    {
+      "type": "toggle",
+      "path": "xray/chest_esp",
+      "label": "s_render_xray_chest_esp",
+      "icon": "ic_chest_black_24dp"
+    },
+    {
+      "type": "toggle",
+      "path": "xray/player_esp",
+      "label": "s_render_xray_player_esp",
+      "icon": "ic_compass_black_24dp"
+    },
+    {
+      "type": "toggle",
+      "path": "xray/block_tracker/enabled",
+      "label": "s_render_xray_block_tracker",
+      "icon": "ic_alert_box_black_24dp",
+      "items": [
+        {
+          "type": "toggle",
+          "path": "xray/block_tracker/track_air",
+          "label": "s_render_xray_block_tracker_air"
+        }
+      ]
+    },
+    {
+      "type": "toggle",
+      "path": "render/tracers/enabled",
+      "label": "s_render_tracers",
+      "icon": "ic_shuffle_black_24dp",
+      "items": [
+        {
+          "type": "slider",
+          "path": "render/tracers/width",
+          "label": "text_size",
+          "range_float": [0.1, 3],
+          "decimal_scale": 1
+        },
+        {
+          "type": "color",
+          "path": "render/tracers/mob_color",
+          "label": "s_render_tracers_mob_color"
+        },
+        {
+          "type": "color",
+          "path": "render/tracers/player_color",
+          "label": "s_render_tracers_player_color"
+        }
+      ]
+    },
+    {
+      "type": "toggle",
+      "path": "render/outline_renderer/enabled",
+      "label": "s_render_outline_renderer",
+      "icon": "ic_circle_outline_black_24dp",
+      "items": [
+        {
+          "type": "slider",
+          "path": "render/outline_renderer/size",
+          "label": "text_size",
+          "values": [1, 2, 3]
+        }
+      ]
+    },
+
+    {
+      "type": "toggle",
+      "path": "freecam/enabled",
+      "label": "s_render_freecam",
+      "icon": "ic_cctv_black_24dp"
+    },
+
+    {
+      "type": "toggle",
+      "path": "fullbright/enabled",
+      "label": "s_render_fullbright",
+      "icon": "ic_brightness_black_24dp"
+    },
+
+    {
+      "type": "toggle",
+      "path": "armor_hud/enabled",
+      "label": "s_render_armor_hud",
+      "has_shortcut": false
+    },
+    {
+      "type": "toggle",
+      "path": "render/damage_indicators/enabled",
+      "label": "s_render_hp_bars",
+      "has_shortcut": false
+    },
+    {
+      "type": "toggle",
+      "path": "minimap/enabled",
+      "label": "s_render_minimap",
+      "has_shortcut": false,
+      "items": [
+        {
+          "type": "slider",
+          "path": "minimap/radius",
+          "label": "s_render_minimap_radius",
+          "values": [3, 4, 5, 6, 7, 8]
+        },
+        {
+          "type": "slider",
+          "path": "minimap/size",
+          "label": "text_size",
+          "range_float": [80, 280]
+        },
+        {
+          "type": "toggle",
+          "path": "minimap/show_players",
+          "label": "s_render_minimap_show_players"
+        }
+      ]
+    },
+    {
+      "type": "toggle",
+      "path": "text_truncate/enabled",
+      "label": "s_render_text_truncate",
+      "has_shortcut": false,
+      "items": [
+        {
+          "type": "slider",
+          "path": "text_truncate/length",
+          "label": "text_text_length",
+          "values": [0, 16, 32, 64, 128, 512]
+        }
+      ]
+    },
+    {
+      "type": "toggle",
+      "path": "zoom/enabled",
+      "label": "s_render_zoom",
+      "icon": "ic_zoom_in_black_24dp",
+      "items": [
+        {
+          "type": "slider",
+          "path": "zoom/value",
+          "label": "Amount",
+          "range_float": [-100, 100]
+        }
+      ]
+    }
+  ]
+}

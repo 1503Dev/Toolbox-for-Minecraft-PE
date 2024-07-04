@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:theme="@style/AppTheme.AccentPrimary"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:id="@id/container"
+    android:tag="layout/dialog_nbt_editor_0"
+    android:background="@color/bottomSheetDialogBg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <io.mrarm.mctoolbox.ui.view.WindowDragHandle
+        android:orientation="horizontal"
+        android:id="@id/header"
+        android:background="#20000000"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@id/close"
+            android:background="@drawable/tab_background"
+            android:padding="16.0dip"
+            android:layout_width="52.0dip"
+            android:layout_height="52.0dip"
+            android:src="@drawable/ic_close_black_24dp"
+            android:contentDescription="@string/action_back"
+            app:tint="?android:textColorPrimary" />
+        <ImageButton
+            android:id="@id/presets"
+            android:background="@drawable/tab_background"
+            android:padding="16.0dip"
+            android:layout_width="52.0dip"
+            android:layout_height="52.0dip"
+            android:src="@drawable/ic_view_list_black_24dp"
+            android:contentDescription="@string/nbt_editor_presets"
+            app:tint="?android:textColorPrimary" />
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+        <ImageButton
+            android:id="@id/category_item"
+            android:tag="binding_1"
+            android:background="@drawable/tab_background"
+            android:padding="16.0dip"
+            android:layout_width="52.0dip"
+            android:layout_height="52.0dip"
+            android:src="@drawable/ic_sword_black_24dp"
+            android:contentDescription="@string/nbt_editor_item"
+            app:tint="?android:textColorPrimary" />
+        <ImageButton
+            android:id="@id/category_mob"
+            android:tag="binding_2"
+            android:background="@drawable/tab_background"
+            android:padding="16.0dip"
+            android:layout_width="52.0dip"
+            android:layout_height="52.0dip"
+            android:src="@drawable/ic_creeper_black_24dp"
+            android:contentDescription="@string/nbt_editor_actor"
+            app:tint="?android:textColorPrimary" />
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+        <ImageButton
+            android:id="@id/save"
+            android:background="@drawable/tab_background"
+            android:padding="16.0dip"
+            android:layout_width="52.0dip"
+            android:layout_height="52.0dip"
+            android:src="@drawable/ic_save_black_24dp"
+            android:contentDescription="@string/action_save"
+            app:tint="?android:textColorPrimary" />
+        <io.mrarm.mctoolbox.ui.view.PopupCrashWorkaroundImageButton
+            android:id="@id/more"
+            android:background="@drawable/tab_background"
+            android:padding="16.0dip"
+            android:layout_width="52.0dip"
+            android:layout_height="52.0dip"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            android:contentDescription="@string/action_more"
+            app:tint="?android:textColorPrimary" />
+    </io.mrarm.mctoolbox.ui.view.WindowDragHandle>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/items"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <io.mrarm.mctoolbox.ui.view.WindowDragHandle
+            android:layout_gravity="end|bottom|center"
+            android:id="@id/resize_handle"
+            android:background="@drawable/resize_handle"
+            android:layout_width="24.0dip"
+            android:layout_height="24.0dip" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:tag="binding_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:layout_marginTop="16.0dip"
+                android:src="@drawable/ic_touch_app_black_24dp"
+                android:tint="#ffffffff" />
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:text="@string/nbt_editor_tap_mob_hint"
+                android:textAlignment="center"
+                android:layout_marginStart="16.0dip"
+                android:layout_marginEnd="16.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

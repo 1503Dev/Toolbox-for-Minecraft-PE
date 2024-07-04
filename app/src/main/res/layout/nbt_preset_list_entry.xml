@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:tag="layout/nbt_preset_list_entry_0"
+    android:background="?selectableItemBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="40.0dip"
+    android:paddingStart="8.0dip"
+    android:paddingEnd="8.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

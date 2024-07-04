@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:id="@id/edit_container"
+    android:tag="layout/dialog_nbt_editor_add_0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/header"
+        android:background="#20000000"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@id/back"
+            android:tag="binding_1"
+            android:background="@null"
+            android:layout_width="52.0dip"
+            android:layout_height="52.0dip"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:contentDescription="@string/action_back"
+            app:tint="?android:textColorPrimary" />
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@id/title"
+            android:background="@null"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/nbt_editor_add_tag"
+            android:layout_weight="1.0"
+            android:paddingStart="16.0dip"
+            android:paddingEnd="16.0dip"
+            style="@style/TextAppearance.AppCompat.Subhead" />
+        <Button
+            android:tag="binding_2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/action_done"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:tag="binding_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:layout_marginBottom="8.0dip"
+                android:hint="@string/text_name"
+                android:layout_marginStart="8.0dip"
+                android:layout_marginEnd="8.0dip">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@id/tag_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="flagNoExtractUi" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:textColor="?android:textColorHint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nbt_editor_tag_type"
+                android:layout_marginStart="10.5dip"
+                android:layout_marginEnd="10.5dip"
+                style="@style/TextAppearance.AppCompat.Caption" />
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@id/types"
+                android:background="@drawable/h_selection_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginStart="10.0dip"
+                android:layout_marginEnd="10.0dip"
+                app:dividerDrawable="@drawable/h_selection_divider"
+                app:flexDirection="row"
+                app:flexWrap="wrap"
+                app:showDividerHorizontal="middle"
+                app:showDividerVertical="middle" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

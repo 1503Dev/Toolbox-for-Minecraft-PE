@@ -1,0 +1,116 @@
+{
+  "name": "category_movement",
+  "help_id": "movement",
+  "android_icon": "ic_run_black_24dp",
+  "shortcut_color": "shortcut_yellow",
+
+  "items": [
+    {
+      "type": "toggle",
+      "path": "movement/flying/enabled",
+      "label": "s_movement_flying",
+      "icon": "ic_feather_black_24dp"
+    },
+    {
+      "type": "toggle",
+      "path": "movement/no_clip/enabled",
+      "label": "s_movement_no_clip",
+      "icon": "ic_square_off_outline_black_24dp"
+    },
+    {
+      "type": "toggle",
+      "path": "movement/phase/enabled",
+      "label": "s_movement_phase",
+      "icon": "ic_border_left_variant_black_24dp"
+    },
+    {
+      "type": "toggle",
+      "path": "movement/air_jump/enabled",
+      "label": "s_movement_air_jump",
+      "icon": "ic_cloud_upload_black_24dp"
+    },
+    {
+      "type": "toggle",
+      "path": "movement/high_jump/enabled",
+      "label": "s_movement_high_jump",
+      "icon": "ic_chevron_double_up_black_24dp",
+      "items": [
+        {
+          "type": "slider",
+          "path": "movement/high_jump/height",
+          "label": "s_movement_high_jump_height",
+          "values": [2, 3, 4, 6]
+        }
+      ]
+    },
+    {
+      "type": "toggle",
+      "path": "movement/speed/enabled",
+      "label": "s_movement_speed",
+      "icon": "ic_run_fast_black_24dp",
+      "items": [
+        {
+          "type": "slider",
+          "path": "movement/speed/multiplier",
+          "label": "s_movement_speed_multiplier",
+          "values": [2, 3, 5, 8]
+        }
+      ]
+    },
+    {
+      "type": "toggle",
+      "path": "movement/auto_sprint/enabled",
+      "label": "s_movement_auto_sprint",
+      "icon": "ic_forwardburger_black_24dp"
+    },
+    {
+      "type": "toggle",
+      "path": "movement/no_slowdown/enabled",
+      "label": "s_movement_no_slowdown",
+      "icon": "ic_timer_sand_black_24dp"
+    },
+    {
+      "type": "toggle",
+      "path": "effects/slow_falling/enabled",
+      "label": "s_movement_slow_falling",
+      "icon": "ic_arrow_collapse_vertical_black_24dp"
+    },
+    {
+      "type": "toggle",
+      "path": "movement/jesus/enabled",
+      "label": "s_movement_jesus",
+      "icon": "ic_waves_black_24dp"
+    },
+    {
+      "type": "toggle",
+      "path": "server/no_packet/enabled",
+      "label": "s_movement_blink",
+      "icon": "ic_ghost_black_24dp"
+    },
+    {
+      "type": "toggle",
+      "path": "server/fly_bypass/enabled",
+      "label": "s_movement_vanilla_fly_bypass",
+      "has_shortcut": false
+    },
+    {
+      "type": "toggle",
+      "path": "tap_teleport/enabled",
+      "label": "s_movement_tap_teleport",
+      "icon": "ic_touch_app_black_24dp",
+      "items": [
+        {
+          "type": "toggle",
+          "path": "tap_teleport/server_bypass",
+          "label": "text_server_bypass"
+        }
+      ]
+    },
+    {
+      "type": "toggle",
+      "path": "server/no_fall/enabled",
+      "label": "s_movement_no_fall",
+      "has_shortcut": false
+    }
+  ]
+}

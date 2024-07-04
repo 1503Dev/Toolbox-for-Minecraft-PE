@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:tag="layout/nbt_tag_root_0"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <io.mrarm.mctoolbox.ui.view.PopupCrashWorkaroundLinearLayout
+        android:orientation="horizontal"
+        android:tag="binding_1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nbt_editor_item_height"
+        android:paddingEnd="@dimen/nbt_editor_hpadding">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_alpha_r_box_outline_black_24dp"
+            android:tint="?android:textColorPrimary" />
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nbt_editor_root"
+            android:layout_marginStart="4.0dip" />
+    </io.mrarm.mctoolbox.ui.view.PopupCrashWorkaroundLinearLayout>
+    <View
+        android:background="#20ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+</LinearLayout>

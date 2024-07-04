@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:theme="@style/AppTheme.AccentPrimary"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/categories"
+        android:background="#80000000"
+        android:paddingTop="8.0dip"
+        android:paddingBottom="8.0dip"
+        android:clipToPadding="false"
+        android:layout_width="186.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/options"
+        android:background="#80000000"
+        android:paddingTop="8.0dip"
+        android:paddingBottom="8.0dip"
+        android:clipToPadding="false"
+        android:layout_width="240.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentEnd="true" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toStartOf="@id/options"
+        android:layout_toEndOf="@id/categories">
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:gravity="center"
+            android:layout_gravity="center|top"
+            android:id="@id/remaining_time_text"
+            android:background="@drawable/settings_icon_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.0dip"
+            android:drawablePadding="8.0dip"
+            android:drawableEnd="@drawable/small_colored_add_icon"
+            android:paddingStart="16.0dip"
+            android:paddingEnd="16.0dip" />
+        <LinearLayout
+            android:layout_gravity="bottom|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@id/settings"
+                android:background="@drawable/settings_icon_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16.0dip"
+                android:src="@drawable/ic_settings_black_24dp"
+                app:tint="#ffffffff" />
+            <ImageView
+                android:id="@id/help"
+                android:background="@drawable/settings_icon_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16.0dip"
+                android:src="@drawable/ic_help_outline_black_24dp"
+                app:tint="#ffffffff" />
+            <ImageView
+                android:id="@id/discord"
+                android:background="@drawable/settings_icon_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16.0dip"
+                android:src="@drawable/ic_discord_black_24dp"
+                app:tint="#ffffffff" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

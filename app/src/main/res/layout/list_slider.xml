@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:tag="layout/list_slider_0"
+    android:layout_width="fill_parent"
+    android:layout_height="40.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_gravity="center"
+        android:tag="binding_1"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:paddingStart="16.0dip" />
+    <com.warkiz.widget.IndicatorSeekBar
+        android:layout_gravity="center"
+        android:id="@id/seekbar"
+        android:paddingTop="10.0dip"
+        android:paddingBottom="10.0dip"
+        android:layout_width="120.0dip"
+        android:layout_height="wrap_content"
+        android:paddingStart="16.0dip"
+        android:paddingEnd="24.0dip"
+        app:isb_indicator_color="@color/seekbarIndicatorColor"
+        app:isb_min="0.0"
+        app:isb_show_tick_marks_type="oval"
+        app:isb_thumb_color="?colorAccent"
+        app:isb_tick_marks_color="?colorAccent"
+        app:isb_tick_marks_size="4.0dip"
+        app:isb_ticks_count="3"
+        app:isb_track_background_color="@color/seekbarBackgroundColor"
+        app:isb_track_progress_color="?colorAccent"
+        style="@style/Widget.AppCompat.SeekBar" />
+</LinearLayout>

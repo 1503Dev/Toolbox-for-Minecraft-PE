@@ -1,0 +1,144 @@
+{
+  "materials": {
+    "version": "1.0.0",
+    "barrier": {
+      "+defines": [
+        "ALPHA_TEST",
+        "TEXEL_AA",
+        "ATLAS_TEXTURE"
+      ],
+      "+states": [
+        "DisableAlphaWrite"
+      ],
+      "vertexFields": [
+        {
+          "field": "Position"
+        },
+        {
+          "field": "UV1"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "UV0"
+        }
+      ],
+      "vertexShader": "shaders/barrier.vertex",
+      "vrGeometryShader": "shaders/uv.geometry",
+      "fragmentShader": "shaders/renderchunk.fragment",
+      "msaaSupport": "Both",
+      "depthFunc": "LessEqual",
+      "blendSrc": "SourceAlpha",
+      "blendDst": "OneMinusSrcAlpha",
+      "+samplerStates": [
+        {
+          "samplerIndex": 0,
+          "textureFilter": "TexelAA"
+        },
+        {
+          "samplerIndex": 1,
+          "textureFilter": "Bilinear"
+        }
+      ]
+    },
+    "XRay": {
+      "+defines": [
+        "ALPHA_TEST"
+      ],
+      "vertexShader": "shaders/color_uv.vertex",
+      "vrGeometryShader": "shaders/color_uv.geometry",
+      "fragmentShader": "shaders/color_texture.fragment",
+      "vertexFields": [
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "UV0"
+        }
+      ],
+      "variants": [
+        {
+          "skinning": {
+            "+defines": [
+              "USE_SKINNING"
+            ],
+            "vertexFields": [
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "Color"
+              },
+              {
+                "field": "UV0"
+              }
+            ]
+          }
+        }
+      ],
+      "msaaSupport": "Both",
+      "+samplerStates": [
+        {
+          "samplerIndex": 0,
+          "textureFilter": "Point"
+        }
+      ]
+    },
+    "Color": {
+      "+defines": [
+        "ALPHA_TEST"
+      ],
+      "+states": [
+        "Blending"
+      ],
+      "vertexShader": "shaders/color_uv.vertex",
+      "vrGeometryShader": "shaders/color_uv.geometry",
+      "fragmentShader": "shaders/color.fragment",
+      "vertexFields": [
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "UV0"
+        }
+      ],
+      "msaaSupport": "Both"
+    },
+    "Outline": {
+      "+defines": [
+        "ALPHA_TEST"
+      ],
+      "+states": [
+        "Blending"
+      ],
+      "vertexShader": "shaders/uv.vertex",
+      "vrGeometryShader": "shaders/uv.geometry",
+      "fragmentShader": "shaders/outline.fragment",
+      "vertexFields": [
+        {
+          "field": "Position"
+        },
+        {
+          "field": "UV0"
+        }
+      ],
+      "msaaSupport": "Both"
+    }
+  }
+}

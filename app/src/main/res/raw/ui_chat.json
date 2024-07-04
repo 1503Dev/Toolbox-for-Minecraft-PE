@@ -1,0 +1,12 @@
+{
+  "name": "category_chat",
+  "help_id": "command",
+  "android_icon": "ic_forum_outline_black_24dp",
+  "shortcut_color": "shortcut_blue",
+
+  "items": [
+    {
+      "type": "command_list"
+    }
+  ]
+}

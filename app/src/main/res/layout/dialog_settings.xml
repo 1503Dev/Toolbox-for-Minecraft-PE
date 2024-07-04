@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:id="@id/settings_container"
+    android:tag="layout/dialog_settings_0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/header"
+        android:background="#20000000"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@id/back"
+            android:tag="binding_1"
+            android:background="@null"
+            android:layout_width="52.0dip"
+            android:layout_height="52.0dip"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:contentDescription="@string/action_back"
+            app:tint="?android:textColorPrimary" />
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@id/title"
+            android:background="@null"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/action_settings"
+            android:layout_weight="1.0"
+            android:paddingStart="16.0dip"
+            android:paddingEnd="16.0dip"
+            style="@style/TextAppearance.AppCompat.Subhead" />
+        <Button
+            android:tag="binding_2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/action_done"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="32.0dip"
+            android:paddingEnd="32.0dip">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6.0dip">
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_button_alpha" />
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0" />
+                <com.warkiz.widget.IndicatorSeekBar
+                    android:id="@id/button_alpha"
+                    android:paddingTop="12.0dip"
+                    android:paddingBottom="12.0dip"
+                    android:layout_width="240.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24.0dip"
+                    app:isb_indicator_color="@color/seekbarIndicatorColor"
+                    app:isb_max="1.0"
+                    app:isb_min="0.0"
+                    app:isb_thumb_color="?colorAccent"
+                    app:isb_tick_marks_color="?colorAccent"
+                    app:isb_track_background_color="@color/seekbarBackgroundColor"
+                    app:isb_track_progress_color="?colorAccent" />
+            </LinearLayout>
+            <CheckBox
+                android:id="@id/premium_"
+                android:tag="binding_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32.0dip"
+                android:text="@string/setting_premium_expire_popup" />
+            <CheckBox
+                android:id="@id/debug_log_overlay"
+                android:tag="binding_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Debug LogCat Overlay" />
+            <CheckBox
+                android:id="@id/log_record"
+                android:tag="binding_5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Record LogCat" />
+            <Button
+                android:id="@id/export_log"
+                android:tag="binding_6"
+                android:background="@drawable/add_button_background"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32.0dip"
+                android:text="Export LogCat" />
+            <Button
+                android:id="@id/gplay_sub_button"
+                android:background="@drawable/add_button_background"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_manage_gplay_subscriptions" />
+            <Button
+                android:id="@id/gdpr_button"
+                android:background="@drawable/add_button_background"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_change_gdpr_consent" />
+            <Button
+                android:textColor="@color/colorColoredButton"
+                android:id="@id/oss_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_open_source_licenses"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+            <TextView
+                android:gravity="center"
+                android:linksClickable="true"
+                android:id="@id/translation_credit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:text="@string/translation_credit" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

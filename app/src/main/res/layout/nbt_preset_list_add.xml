@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+    android:orientation="vertical"
+    android:tag="layout/nbt_preset_list_add_0"
+    android:background="@drawable/add_button_background"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/action_add"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset
+    android:insetLeft="4.0dip"
+    android:insetRight="4.0dip"
+    android:insetTop="6.0dip"
+    android:insetBottom="6.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <selector>
+        <item
+            android:state_enabled="false">
+            <shape
+                android:shape="rectangle">
+                <solid
+                    android:color="@color/colorColoredButtonDisabled" />
+                <corners
+                    android:radius="200.0dip" />
+            </shape>
+        </item>
+        <item>
+            <shape
+                android:shape="rectangle">
+                <solid
+                    android:color="@color/colorColoredButton" />
+                <corners
+                    android:radius="200.0dip" />
+            </shape>
+        </item>
+    </selector>
+</inset>

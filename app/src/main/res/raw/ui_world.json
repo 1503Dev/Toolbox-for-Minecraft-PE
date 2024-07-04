@@ -1,0 +1,155 @@
+{
+  "name": "category_world",
+  "help_id": "world",
+  "android_icon": "ic_cube_outline_black_24dp",
+  "shortcut_color": "shortcut_green",
+
+  "items": [
+    {
+      "type": "toggle",
+      "path": "autobuild/no_fall/enabled",
+      "label": "s_world_bridge_builder",
+      "icon": "ic_arrow_bottom_right_bold_outline_black_24dp"
+    },
+    {
+      "type": "toggle",
+      "path": "cheststealer/enabled",
+      "label": "s_world_chest_stealer",
+      "icon": "ic_transfer_black_24dp"
+    },
+    {
+      "type": "toggle",
+      "path": "autobuild/fast_destroy/enabled",
+      "label": "s_world_fast_destroy",
+      "icon": "ic_texture_box_black_24dp",
+      "items": [
+        {
+          "type": "slider",
+          "path": "autobuild/fast_destroy/size",
+          "label": "s_world_fast_destroy_range",
+          "values": [3, 5, 7]
+        }
+      ]
+    },
+    {
+      "type": "toggle",
+      "path": "effects/haste/enabled",
+      "label": "s_world_haste_effect",
+      "icon": "ic_pickaxe_black_24dp",
+      "items": [
+        {
+          "type": "slider",
+          "path": "effects/haste/amplifier",
+          "label": "effect_amplifier",
+          "values": [1, 2, 5, 10, 50]
+        }
+      ]
+    },
+    {
+      "type": "toggle",
+      "path": "force_achievements/enabled",
+      "label": "s_world_force_achievements",
+      "has_shortcut": false
+    },
+
+    {
+      "type": "toggle",
+      "path": "rapid_build/enabled",
+      "label": "s_world_rapid_build",
+      "items": [
+        {
+          "type": "toggle",
+          "path": "rapid_build/command_mode",
+          "label": "s_world_rapid_build_command_mode"
+        }
+      ],
+      "has_shortcut": false
+    },
+    {
+      "type": "toggle",
+      "path": "rapid_build_v2/enabled",
+      "label": "s_world_rapid_build_v2",
+      "items": [
+        {
+          "type": "slider",
+          "path": "rapid_build_v2/repeat",
+          "label": "s_world_rapid_build_repeat",
+          "values": [1, 2, 3, 4, 5, 6, 8, 10]
+        },
+        {
+          "type": "slider",
+          "path": "rapid_build_v2/gap",
+          "label": "s_world_rapid_build_gap",
+          "values": [1, 2, 3, 4, 5, 6, 8, 10]
+        },
+        {
+          "type": "toggle",
+          "path": "rapid_build_v2/lock_direction",
+          "label": "s_world_rapid_build_lock_direction"
+        },
+        {
+          "type": "toggle",
+          "path": "rapid_build_v2/sticky_mode",
+          "label": "s_world_rapid_build_sticky_mode"
+        }
+      ],
+      "has_shortcut": false
+    },
+    {
+      "type": "action",
+      "path": "add_item",
+      "label": "s_world_give_item",
+      "icon": "ic_shape_square_plus_black_24dp"
+    },
+    {
+      "type": "action",
+      "path": "enchant",
+      "label": "s_world_enchant",
+      "icon": "ic_auto_fix_black_24dp"
+    },
+    {
+      "type": "toggle",
+      "path": "nbt_editor/enabled",
+      "label": "s_world_nbt_editor",
+      "has_shortcut": false
+    },
+    {
+      "type": "action",
+      "path": "spawn_exp",
+      "label": "s_world_spawn_exp",
+      "has_shortcut": false
+    },
+    {
+      "type": "toggle",
+      "path": "pick_custom_distance/enabled",
+      "label": "s_world_pick_distance",
+      "has_shortcut": false,
+      "items": [
+        {
+          "type": "slider",
+          "path": "pick_custom_distance/distance",
+          "label": "text_distance",
+          "range_float": [8, 4096]
+        }
+      ]
+    },
+    {
+      "type": "toggle",
+      "path": "server/far_bypass/enabled",
+      "label": "s_world_far_bypass",
+      "has_shortcut": false
+    },
+    {
+      "type": "toggle",
+      "path": "server/name_override/enabled",
+      "label": "s_world_name_override",
+      "has_shortcut": false,
+      "items": [
+        {
+          "type": "text",
+          "path": "server/name_override/text"
+        }
+      ]
+    }
+  ]
+}

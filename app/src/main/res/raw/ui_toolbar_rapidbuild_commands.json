@@ -1,0 +1,41 @@
+{
+  "show_if": {
+    "and": [
+      "rapid_build/enabled",
+      "rapid_build/command_mode"
+    ]
+  },
+
+  "items": [
+    {
+      "type": "toggle",
+      "path": "rapid_build/selection_mode",
+      "value": 1,
+      "icon": "ic_area1_black_24dp"
+    },
+    {
+      "type": "toggle",
+      "path": "rapid_build/selection_mode",
+      "value": 2,
+      "icon": "ic_area2_black_24dp"
+    },
+    {
+      "type": "separator"
+    },
+    {
+      "type": "action",
+      "path": "rapid_build/copy",
+      "icon": "ic_content_copy_black_24dp"
+    },
+    {
+      "type": "action",
+      "path": "rapid_build/paste",
+      "icon": "ic_content_paste_black_24dp"
+    },
+    {
+      "type": "action",
+      "path": "rapid_build/fill",
+      "icon": "ic_texture_box_black_24dp"
+    }
+  ]
+}

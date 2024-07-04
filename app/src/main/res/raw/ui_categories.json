@@ -1,0 +1,4 @@
+{
+  "categories": ["movement", "world", "render", "chat", "combat"],
+  "toolbars": ["rapidbuild_normal", "rapidbuild_commands"]
+}

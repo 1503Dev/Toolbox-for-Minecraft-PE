@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:id="@id/edit_container"
+    android:tag="layout/dialog_command_edit_0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/header"
+        android:background="#20000000"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@id/back"
+            android:tag="binding_1"
+            android:background="@null"
+            android:layout_width="52.0dip"
+            android:layout_height="52.0dip"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:contentDescription="@string/action_back"
+            app:tint="?android:textColorPrimary" />
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent">
+                    <Button
+                        android:tag="binding_2"
+                        android:background="@drawable/tab_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="@string/command_mode_once" />
+                    <Button
+                        android:tag="binding_3"
+                        android:background="@drawable/tab_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="@string/command_mode_repeat" />
+                    <Button
+                        android:tag="binding_4"
+                        android:background="@drawable/tab_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="@string/command_mode_teleport" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+        <Button
+            android:tag="binding_5"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/action_done"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginStart="8.0dip"
+                android:layout_marginEnd="8.0dip">
+                <ImageButton
+                    android:layout_gravity="bottom"
+                    android:tag="binding_6"
+                    android:background="@drawable/icon_edit_border"
+                    android:padding="8.0dip"
+                    android:layout_width="48.0dip"
+                    android:layout_height="48.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginStart="4.0dip"
+                    android:layout_marginEnd="8.0dip"
+                    app:tint="?android:textColorPrimary" />
+                <io.mrarm.mctoolbox.ui.view.AutoClearErrorTextInputLayout
+                    android:id="@id/nameLayout"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/text_name"
+                    android:layout_weight="1.0">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:tag="binding_7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="flagNoExtractUi" />
+                </io.mrarm.mctoolbox.ui.view.AutoClearErrorTextInputLayout>
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:tag="binding_8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:layout_marginBottom="8.0dip"
+                android:hint="@string/text_command"
+                android:layout_marginStart="8.0dip"
+                android:layout_marginEnd="8.0dip">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:tag="binding_9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="flagNoExtractUi" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <io.mrarm.mctoolbox.ui.view.LabelLayout
+                android:tag="binding_10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:hint="@string/text_position"
+                android:layout_marginStart="8.0dip"
+                android:layout_marginEnd="8.0dip">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@id/tpPosX"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:imeOptions="flagNoExtractUi" />
+                    <EditText
+                        android:id="@id/tpPosY"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:imeOptions="flagNoExtractUi" />
+                    <EditText
+                        android:id="@id/tpPosZ"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:imeOptions="flagNoExtractUi" />
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3.5dip"
+                    android:paddingEnd="3.5dip" />
+            </io.mrarm.mctoolbox.ui.view.LabelLayout>
+            <io.mrarm.mctoolbox.ui.view.LabelLayout
+                android:tag="binding_11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:hint="@string/command_repeat_interval">
+                <com.warkiz.widget.IndicatorSeekBar
+                    android:id="@id/repeat_interval"
+                    android:paddingTop="12.0dip"
+                    android:paddingBottom="12.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:isb_indicator_color="@color/seekbarIndicatorColor"
+                    app:isb_min="0.0"
+                    app:isb_show_tick_marks_type="oval"
+                    app:isb_thumb_color="?colorAccent"
+                    app:isb_tick_marks_color="?colorAccent"
+                    app:isb_tick_marks_size="2.0dip"
+                    app:isb_ticks_count="30"
+                    app:isb_track_background_color="@color/seekbarBackgroundColor"
+                    app:isb_track_progress_color="?colorAccent" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:paddingStart="12.0dip"
+                    android:paddingEnd="12.0dip" />
+            </io.mrarm.mctoolbox.ui.view.LabelLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
