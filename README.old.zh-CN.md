@@ -1,5 +1,5 @@
 # Toolbox for Minecraft: PE
-[English](README.md) | 简体中文
+[English](README.old.md) | 简体中文
 
 **有了这个MOD你可以给自己的项目，改变游戏模式和更多！**
 

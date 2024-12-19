@@ -1,20 +1,26 @@
-# Toolbox for Minecraft: PE
-English | [简体中文](README.zh-CN.md)
+# __**Hey Toolbox Community…**__
+As the year comes to an end, we have some sad news to share… After much thought and consideration, we’re are making the difficult decision to **move away from the Toolbox application**.  
 
-**With this MOD, you can get items, change gamemode, and more!**
 
-IMPORTANT: This mod requires Minecraft: Pocket Edition. You can download it from the Play store.
+## What’s happening with Toolbox?  
+The future of the Toolbox app remains uncertain. With mrarm possibly stepping away from development and life pulling us all in different directions, Toolbox, as we’ve known it, has become a cherished piece of history.  
 
-Toolbox is a launcher/modification for Minecraft: PE (MCPE) that allows you to give yourself items (just like in the popular Too Many Items modification), potion effects, enchant items, see valuable blocks using a special mode called X-Ray, and much more!
 
-- Missing an item in Survival? Just select it from the menu.
-- Dark caves will no longer be a problem if you enable Fullbright mode.
-- Navigate with ease using the Minimap.
-- Got tired of walking every time you need to get an item from main chest? Create a teleport command!
-- Can't find diamonds for hours? Just activate the X-Ray mode.
-Download this application and become a master of Minecraft: Pocket Edition!
-- Build complex structures in creative more easily with Rapid Build and Reach.
+## Why this decision and what now?  
+While Toolbox brought us together and will always hold a special place in our hearts, we believe it’s time to embrace a new path. This community has always been more than an app—it’s always been about the people, the memories, the bonds we’ve formed, **the community**. That said, we’re transitioning into something new, a space where we can honor our roots whilst building something uniquely ours.
 
-You can also join our Discord server at [https://discord.gg/F8XUCQwKTw](https://discord.gg/F8XUCQwKTw)
+We are still working out the rebrand, but it will perfectly encapsulates everything Toolbox has meant to us. It will reflect not just the app and game that united us—Toolbox & Minecraft—but also the laughter, competitiveness, drama, and all the ups and downs that make our history so meaningful. It’s a tribute to our journey, a nod to where we started, and a celebration to where we’re heading.
 
-Note: This app is not affiliated with Minecraft, Mojang or Microsoft
+We know change isn’t always easy, and saying goodbye to the name “Toolbox” is for sure without a doubt bittersweet. But this new chapter gives us the chance to create something fresh while still honoring the legacy of the app, the community, and MrArm’s incredible contributions.
+
+More details about this transition, including the new name and what’s to come, will be shared soon.
+
+Thank you for being a part of this journey with us. Your support, memories, and passion are what make this community so special. Together, let’s make this next chapter just as meaningful as the last.
+
+Sincerely,  
+**Toolbox Team**
+
+12/16/2024 11:36
+
+
+[Old Readme](README.old.md)
